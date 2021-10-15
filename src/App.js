@@ -18,7 +18,7 @@ function App() {
                 <Header />
             </>
             <>
-                <Body background={'./img/BGWP.jpg'} />
+                <Body background={''} />
             </>
             <>
                 <Footer />
