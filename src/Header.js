@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import { Component } from "react";
+import Nav from './Nav.js'
 //Title
 //Nav?
 //Background Img
@@ -17,48 +18,29 @@ export default class Header extends Component {
         // renders the restaurant name
         return (
             <>
-                <div className={"container-fluid " + "bg-danger " + 'text-center ' } >
+                <div className={"container-fluid " + "bg-danger " + 'text-center '} >
+
                     <div className='row' height='97.33'>
-                        <div className={'col '+ 'my-auto'} >
-                            <img src={this.source} alt='Logo' max-height='130.33'  />
+
+                        <div className={'col ' + 'my-auto'} >
+                            <img src={this.source} alt='Logo' max-height='130.33' />
                         </div>
+
                         <div className='col'>
                             <h1 className='text-center'>{this.restaurantName}</h1>
                             <h3 className='text-center'>{this.address}</h3>
                         </div>
-                        <div className='col'>
-                            
-                        </div>
+
                     </div>
-
-
-
-
+                    
                 </div>
-                <div className={"container-fluid " + "bg-warning " + 'text-center ' } >
-                    <div className='row'>
-                        <div className='col'>
-                            <button className='btn btn-warning'>
-                                Breakfast Menu
-                            </button>
-                            
-                        </div>
-                        <div className='col'>
-                            <button className='btn btn-warning'>
-                                Lunch Menu
-                            </button>
-                        </div>
-                        <div className='col'>
-                            <button className='btn btn-warning'>
-                                Dinner Menu
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                <Nav />
             </>
         );
     }
+
 }
+
 
 
 
